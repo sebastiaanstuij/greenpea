@@ -1,7 +1,7 @@
 {
-  "name": "greenpea-webserver",
+  "name": "greenpea-webserver-iot",
   "version": "1.0.0",
-  "description": "webserver with REST api to serve energy origin and usage data",
+  "description": "iot the-things-network webserver for connected greenpeas",
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

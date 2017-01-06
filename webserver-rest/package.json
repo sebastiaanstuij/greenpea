@@ -1,0 +1,25 @@
+{
+  "name": "greenpea-webserver-rest",
+  "version": "1.0.0",
+  "description": "rest api to energy supply, usage and origin",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+    "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sebastiaanstuij/greenpea.git"
+  },
+  "author": "Sebastiaan Stuij",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sebastiaanstuij/greenpea/issues"
+  },
+  "homepage": "https://github.com/sebastiaanstuij/greenpea#readme",
+  "dependencies": {
+    "express": "~4.0.0"
+  }
+}
+
+
+
