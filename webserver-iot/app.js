@@ -1,8 +1,8 @@
 var ttn = require('ttn');
 
 var region = 'eu';
-var appId = 'arduinonodetest';
-var accessKey = 'ttn-account-v2.HWSBtS5jSvN0Lb0fvltzrLFd7zPuRKWP5ay73kmHjx4';
+var appId = 'atmega328_rfm95';
+var accessKey = 'ttn-account-v2.ajLN31-9LCErcWEUUoemSvRA40ZF0FNLKcpK04kDS4U';
 
 var client = new ttn.Client(region, appId, accessKey);
 
