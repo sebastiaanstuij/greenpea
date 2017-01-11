@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/sebastiaanstuij/greenpea#readme",
   "dependencies": {
-    "ttn": "^2.0.1"
+    "ttn": "^2.0.1",
+    "request": "^2.55.0"
   }
 }
