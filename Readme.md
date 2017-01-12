@@ -14,22 +14,10 @@ This repo consists of the following projects:
 ## Tech
 The webserver projects require [Node.js](https://nodejs.org/) v4+ to run.
 
-### RaspberryPi Setup
-1) Install and configure Raspbian (see: )
-2) SSH setup
-3) Install and configure NodeJS
-4) Install and configure PM2
-5) ..
 
 ### Repo Installation
-
 See corresponding sub-repo for installation instructions of each project
 
-
-## Todos
-
- - bla1
- - bla2
 
 License
 ----
