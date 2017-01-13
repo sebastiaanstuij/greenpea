@@ -102,7 +102,7 @@ In order to analyze and access the PM2 logging from outside your RaspberryPi or 
 ### (Optional) app deployment with PM2
 work in progress
 
-### (Optional) Setup log server
+### (Optional) Unit testing with [MochaJS](https://mochajs.org/)
 work in progress
 
 
