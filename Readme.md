@@ -1,6 +1,6 @@
 # GreenPea Project
-<a href="url"><img src="https://github.com/sebastiaanstuij/greenpea/blob/master/assets/greenpea_logo.png" align="left" height="25%" width="25%" ></a>
-<br>
+![GreenPea Logo](assets/greenpea_logo.png)
+
 > [greenpea project in 2 sentences]
 
 ## Project Structure

@@ -1,6 +1,6 @@
 # Greenpea IoT 'the Things Network' webserver
-<a href="url"><img src="https://github.com/sebastiaanstuij/greenpea/blob/master/assets/greenpea_logo.png" align="left" height="100" width="100" ></a>
-<br>
+
+![GitHub Logo](../assets/greenpea_logo.png)
 > [greenpea project in 2 sentences]
 
 ## RaspberryPi IoT Web Server Setup
