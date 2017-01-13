@@ -44,6 +44,8 @@ For extra security see: [additional security #2](https://superuser.com/questions
 2. Make pm2 start on (re)boot RaspberryPi:
     $ sudo pm2 startup systemd -u <username>
 
+3. Install pm2 logrotate:   
+
 ### Install Git and fork this repo
 1. First install git:
 	$ sudo apt-get install git
