@@ -1,12 +1,5 @@
 # GreenPea Project
-
-[![GreenPea](https://github.com/sebastiaanstuij/greenpea/blob/master/assets/greenpea_logo.png](ref-url)
-
-![GreenPea](https://github.com/sebastiaanstuij/greenpea/blob/master/assets/greenpea_logo.png "GreenPea Logo")
-<a href="url"><img src="https://github.com/sebastiaanstuij/greenpea/blob/master/assets/greenpea_logo.png" align="left" height="48" width="48" ></a>
-
-
-
+<a href="url"><img src="https://github.com/sebastiaanstuij/greenpea/blob/master/assets/greenpea_logo.png" align="left" height="100" width="100" ></a>
 > [greenpea project in 2 sentences]
 
 ## Project Structure
