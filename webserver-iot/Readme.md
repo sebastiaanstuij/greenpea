@@ -99,6 +99,15 @@ In order to analyze and access the PM2 logging from outside your RaspberryPi or 
     $ pm2 set pm2-loggly.pm2Apps webserver-iot, <etc.>
 5. Go to your new loggly page and see incoming log messages
 
+### (Optional) get latest repo updates
+1. To get the latest updates after first install:
+    $ cd ~/<name custom directory>/greenpea
+	$ git pull
+2. Git will ask you to enter username and password each time you want to pull
+3. (Optional) In order to setup passwordless ssh access with github, 
+    see [this turorial](https://help.github.com/articles/changing-a-remote-s-url/) to change remote URL from HTTPS to SSH and [this tutorial](http://garywoodfine.com/setting-up-ssh-keys-for-github-access/) for the remaining steps
+
+
 ### (Optional) app deployment with PM2
 work in progress
 
