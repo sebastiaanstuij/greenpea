@@ -1,6 +1,6 @@
 # GreenPea Project
 
-[![Logo](img-url)](ref-url)
+[![Logo](./assets/greenpea_logo.png](ref-url)
 > [greenpea project in 2 sentences]
 
 ## Project Structure
@@ -25,9 +25,6 @@ License
 --
 
 
-[//]: # (These are reference links used in the body of this note and get stripped out when the markdown processor does its job. There is no need to format nicely because it shouldn't be seen. Thanks SO - http://stackoverflow.com/questions/4823468/store-comments-in-markdown-syntax)
-
-   [node.js]: <http://nodejs.org>
-
+[//]:# 
 
 
