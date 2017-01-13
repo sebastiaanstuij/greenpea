@@ -1,6 +1,6 @@
 # GreenPea Project
 
-[![Logo](./assets/greenpea_logo.png](ref-url)
+[![GreenPea](https://github.com/sebastiaanstuij/greenpea/blob/master/assets/greenpea_logo.png](ref-url)
 > [greenpea project in 2 sentences]
 
 ## Project Structure
@@ -23,8 +23,5 @@ License
 ----
 
 --
-
-
-[//]:# 
 
 
