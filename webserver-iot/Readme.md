@@ -56,7 +56,7 @@ For extra security see: [additional security #2](https://superuser.com/questions
 	$ git clone <https://github.com/sebastiaanstuij/greenpea>
 
 ### Register new 'The Thingsnetwork' app 
-1. First go to the Thingsnetwork website and register a new user and a new app: [the things network](<https://www.thethingsnetwork.org/)
+1. First go to the Thingsnetwork website and register (for free) a new user and a new app: [the things network](<https://www.thethingsnetwork.org/)
 2. Then go to your [developer console](https://console.thethingsnetwork.org/applications/)
 3. Select your app and note the ApplicationID and access key
 4. Open the app.js file and modify the 'var appId' and 'var accessKey' variables to reflect your settings:
@@ -82,6 +82,22 @@ For extra security see: [additional security #2](https://superuser.com/questions
 6. To view the logs of the process:
     $ pm2 logs webserver-iot --lines 200
 
+7. (optional) Install [logrotate](https://github.com/pm2-hive/pm2-logrotate) in order to handle logging more efficiently
+    $ pm2 install pm2-logrotate    
+
+### (Optional) Configure webbased logging:
+In order to analyze and access the PM2 logging from outside your RaspberryPi or local network:
+
+1. Go to the [Logly website](https://www.loggly.com) and register for a new account (free).
+2. Go to your new page and copy the 'Live tail token': https://<userdefined>.loggly.com/live_tail/tokens
+3. Install the pm2-plugin on your RaspberryPi: [pm2-loggly](https://github.com/dfrankland/pm2-loggly):
+    $ pm2 install pm2-loggly
+4. Then configure pm2-loggly:
+    $ pm2 set pm2-loggly.logglyClient.token <my-extra-long-token-from-loggly>
+    $ pm2 set pm2-loggly.logglyClient.subdomain <mylogglysubdomain>
+    $ pm2 set pm2-loggly.logglyClient.tags webserver-iot, <etc.>
+    $ pm2 set pm2-loggly.pm2Apps webserver-iot, <etc.>
+5. Go to your new loggly page and see incoming log messages
 
 ### (Optional) app deployment with PM2
 work in progress
