@@ -60,7 +60,7 @@ For extra security see: [additional security #2](https://superuser.com/questions
     $ npm install 
 
 3. To start the app with PM2:
-    $ pm2 start app.js --watch --name webserver-rest
+    $ pm2 start server.js --watch --name webserver-rest
 
 4. To save the current PM2 state (so that it will run automatically on reboot or crash):
     $ pm2 save
@@ -70,6 +70,23 @@ For extra security see: [additional security #2](https://superuser.com/questions
 
 6. To view the logs of the process:
     $ pm2 logs webserver-rest --lines 200
+
+7. (optional) Install [logrotate](https://github.com/pm2-hive/pm2-logrotate) in order to handle logging more efficiently
+    $ pm2 install pm2-logrotate    
+
+### (Optional) Configure webbased logging:
+In order to analyze and access the PM2 logging from outside your RaspberryPi or local network:
+
+1. Go to the [Logly website](https://www.loggly.com) and register for a new account (free).
+2. Go to your new page and copy the 'Live tail token': https://<userdefined>.loggly.com/live_tail/tokens
+3. Install the pm2-plugin on your RaspberryPi: [pm2-loggly](https://github.com/dfrankland/pm2-loggly):
+    $ pm2 install pm2-loggly
+4. Then configure pm2-loggly:
+    $ pm2 set pm2-loggly.logglyClient.token <my-extra-long-token-from-loggly>
+    $ pm2 set pm2-loggly.logglyClient.subdomain <mylogglysubdomain>
+    $ pm2 set pm2-loggly.logglyClient.tags webserver-iot, <etc.>
+    $ pm2 set pm2-loggly.pm2Apps webserver-iot, <etc.>
+5. Go to your new loggly page and see incoming log messages
 
 ### (Optional) Open server to the outside world
 1. Dynamic DNS:
@@ -93,11 +110,18 @@ Whenever your Raspberry Pi reboots, it'll get a new dynamic IP from your router.
 3. Open your router to the world:
 You need to enable single port forwarding on your local router. Our webserver is running on port <see log>, so I followed [this](http://www.noip.com/support/knowledgebase/port-forwarding-on-a-linksys-wrt610n-router/) tutorial to open up that port on a certain router.
 
+### (Optional) get latest repo updates
+1. To get the latest updates after first install:
+    $ cd ~/<name custom directory>/greenpea
+	$ git pull
+2. Git will ask you to enter username and password each time you want to pull
+3. (Optional) In order to setup passwordless ssh access with github, 
+    see [this turorial](https://help.github.com/articles/changing-a-remote-s-url/) to change remote URL from HTTPS to SSH and [this tutorial](http://garywoodfine.com/setting-up-ssh-keys-for-github-access/) for the remaining steps
 
 ### (Optional) app deployment with PM2
 work in progress
 
-### (Optional) Setup log server
+### (Optional) Unit testing with [MochaJS](https://mochajs.org/)
 work in progress
 
 

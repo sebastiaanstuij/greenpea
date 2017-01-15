@@ -59,9 +59,9 @@ For extra security see: [additional security #2](https://superuser.com/questions
 1. First go to the Thingsnetwork website and register (for free) a new user and a new app: [the things network](<https://www.thethingsnetwork.org/)
 2. Then go to your [developer console](https://console.thethingsnetwork.org/applications/)
 3. Select your app and note the ApplicationID and access key
-4. Open the app.js file and modify the 'var appId' and 'var accessKey' variables to reflect your settings:
+4. Open the server.js file and modify the 'var appId' and 'var accessKey' variables to reflect your settings:
 
-    $ nano app.js
+    $ nano server.js
 
 ### Starting the app with PM2
 1. First navigate to the right folder:
@@ -71,7 +71,7 @@ For extra security see: [additional security #2](https://superuser.com/questions
     $ npm install 
 
 3. To start the app with PM2:
-    $ pm2 start app.js --watch --name webserver-iot
+    $ pm2 start server.js --watch --name webserver-iot
 
 4. To save the current PM2 state (so that it will run automatically on reboot or crash):
     $ pm2 save
