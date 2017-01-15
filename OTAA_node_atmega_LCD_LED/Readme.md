@@ -4,7 +4,7 @@ Function:
 
 
 Hardware:
-- Atmega 328
+- Atmega 328 (3.3v)
 - RFM95 868 Mhz
 - Nokia 5110 / PCD 8544 LCD screen
 - 2 LED's
