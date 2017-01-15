@@ -124,6 +124,10 @@ work in progress
 ### (Optional) Unit testing with [MochaJS](https://mochajs.org/)
 work in progress
 
+### TODO:
+- add [PM2 deploy](https://github.com/sean-hill/raspberry-pi-web-server) functionality
+- Refactor to [ES6](https://scotch.io/tutorials/better-node-with-es6-pt-i)
+- add [unit tests](https://scotch.io/tutorials/test-a-node-restful-api-with-mocha-and-chai)
 
 License
 ----
