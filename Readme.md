@@ -11,6 +11,8 @@ This repo consists of the following projects:
 * web-app admin (planned): Angular2 webapp to control LoraWan devices
 * web-app client (planned): Angular2 webapp to display detailed energy usage and supply data including energy-source data.
 
+* Node microcontroller sketches; trial setups with Atmega 328, RFM95 868Mhz and PCD8544 LCD screen for prototype stage.
+
 ## Tech
 The webserver projects require [Node.js](https://nodejs.org/) v4+ to run.
 
