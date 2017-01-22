@@ -25,16 +25,21 @@ client.on('device', null, 'down/scheduled', function(deviceId, data) {
 
 client.on('message', function(deviceId, data) {
   console.info('[INFO] ', 'Message:', deviceId, JSON.stringify(data, null, 2));
+  
+  // If you don't have an encoder payload function:
+  var payload = [led ? 0 : 1];
+  console.log('[DEBUG]', 'Sending1:', JSON.stringify(payload));
+  client.send(deviceId, payload);
 });
 
 client.on('message', null, 'led', function(deviceId, led) {
   // Toggle the LED
-  var payload = {
-    led: !led
-  };
+  // var payload = {
+  //   led: !led
+  // };
 
   // If you don't have an encoder payload function:
-  // var payload = [led ? 0 : 1];
-  console.log('[DEBUG]', 'Sending:', JSON.stringify(payload));
+  var payload = [led ? 0 : 1];
+  console.log('[DEBUG]', 'Sending2:', JSON.stringify(payload));
   client.send(deviceId, payload);
 });
