@@ -8,7 +8,7 @@ var bodyParser = require('body-parser');
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
-var port = process.env.PORT || 3000;        // set our port
+var port = 3000;        // set our port //process.env.PORT || 3000
 
 // ROUTES FOR OUR API
 // =============================================================================
